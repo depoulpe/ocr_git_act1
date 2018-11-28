@@ -24,5 +24,6 @@ function datetime(id)
       }
    result = 'Nous sommes le '+days[day]+' '+d+' '+months[month]+' '+year+' il est '+h+':'+m+':'+s;
    document.getElementById(id).innerHTML = result;
+   setTimeout('datetime("'+id+'");','1000');
    return result;     
 }
